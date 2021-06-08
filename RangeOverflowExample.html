@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input id="id1" type="number"  max="300" >
+<button onclick="fun()">Submit</button>
+<div id="demo" class="into"></div>
+<script >
+	function fun(){
+		var text="";
+		
+		if(document.getElementById("id1").validity.rangeOverflow){
+			text="value is too large";
+		}else{
+			text="input is valid";
+		}
+		document.getElementById("demo").innerHTML=text;
+		
+	}
+
+</script>
+</body>
+</html>
+dom - js CRUD html element attribute
+action- add,delete etc
+value- set get
+
+finding HTML element in DOM/web page
+        getElementByTagName("div")
+		getElementByClassName("into")
+		getElementById("demo")
+
+changing HTML element
+		element.innerHTML
+		element.attribute  src="p.jpg"
+		element.style.property=
+		method
+		element.setAttribute(attribute,value)
+
+add and delete element
+document.CreateElement(element)
+document.removeChild(element)
+document.appendChild(element)
+		replaceChild(new,old)
+		write(text)
+document.anchors
+cookie,body,baseURI,forms
+
+
+
+

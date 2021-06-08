@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	 <button onclick="fun1()">add new h1 first position</button> 
+	 <button onclick="fun()">add new h1 last position</button> 
+	 <button onclick="f1()">remove</button>
+<button onclick="f2()">remove chlid using removeChild() </button>
+<div id="div1">
+	<h1 id="h101">jan Batch</h1>
+	<h1 id="h102">feb batch</h1>
+	<p id="para">Hellooooooooo</p>
+
+</div>
+
+<script >
+
+var p=document.getElementById("div1");
+var c=document.getElementById("h101");
+var h=document.createElement("h1");
+	var node=document.createTextNode("TQ");
+	h.appendChild(node);
+	p.replaceChild(h,c);
+
+
+	function f2(){
+var p=document.getElementById("div1");
+var c=document.getElementById("para");
+p.removeChild(c);	
+
+}
+
+	function f1(){
+	var ele=document.getElementById("para");
+	ele.remove();
+}
+
+
+	function fun1(){
+	var h=document.createElement("h1");
+	var node=document.createTextNode("Hello TQ");
+	h.appendChild(node);
+	var element=document.getElementById("div1");
+	var child=document.getElementById("h101");
+	element.insertBefore(h,child);}
+	function fun(){
+	var h=document.createElement("h1");
+	var node=document.createTextNode("Hello TQ");
+	h.appendChild(node);
+	var element=document.getElementById("div1");
+	element.appendChild(h);
+}
+
+	
+
+
+</script>
+
+
+</body>
+</html>

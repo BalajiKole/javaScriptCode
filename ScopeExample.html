@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<div id="demo1"></div>
+<script >
+	
+//scope  local,global
+var pname="Jay";// global scope
+myFun();
+function myFun(){
+	let x=20;
+	//var pname="Jay"; // local or function scope
+ //pname="ansh";
+	document.getElementById("demo").innerHTML=pname + " "+ typeof pname +x;
+}
+document.getElementById("demo1").innerHTML=window.pname+" "+typeof pname+x;	
+
+
+</script>
+</body>
+</html>

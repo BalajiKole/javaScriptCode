@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script>
+	class Person{
+		constructor(pname){
+			this.pname=pname;
+		}
+		show(){
+			return 'I am '+" "+this.pname;
+		}
+	}
+
+	class Address extends Person{
+		constructor(pname,city){
+			super(pname);
+			this.city=city;
+		}
+		display(){
+			return this.show()+" "+"my city is "+" "+this.city
+		}
+	}
+obj=new Address("Jay","Pune");
+document.getElementById("demo").innerHTML=obj.display();
+
+</script>
+
+</body>
+</html>

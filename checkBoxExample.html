@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  var tea = document.forms[0];
+  var text = "";
+  var i;
+  for (i = 0; i < tea.length; i++) {
+    if (tea[i].checked) {
+      text = text + tea[i].value + " ";
+    }
+  }
+  document.getElementById("order").innerHTML = "You ordered a tea with: " + text;
+}
+</script> 
+</head>
+<body>
+
+<p>How would you like your Tea?</p>
+
+<form >
+<input type="checkbox" name="tea" value="sugar">With sugar<br>
+<input type="checkbox" name="tea" value="cream">With cream<br>
+
+<br>
+<input type="button" onclick="myFunction()" value="Send order">
+<br>
+<p id="order" size="50"></p>
+
+</form>
+<script>
+                
+    for(i=5;i>=1;i--) 
+    {
+
+    for(j=i;j>=1;j--)
+    {
+        document.write("*");
+    }
+    document.write("<br>");
+   }
+
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var TextBoxcount = 0;
+
+function addElement() {
+    TextBoxcount++;
+    var newDiv = document.createElement('div');
+    newDiv.setAttribute('id', '_div' + TextBoxcount);
+    newDiv.innerHTML = 'Textbox ' + TextBoxcount + ': <input type="text" id="_tb' + TextBoxcount + '" name="_tb' + TextBoxcount + '"/>';
+    document.getElementById('data').appendChild(newDiv);
+}
+
+function removeElement() {
+    if(0 < TextBoxcount) {
+        document.getElementById('data').removeChild(document.getElementById('_div' + TextBoxcount));
+        TextBoxcount--;
+    } else {
+        alert("No textbox to remove");
+    }
+}
+</script>
+
+</head>
+<body>
+<p>Adding and removing textboxes dynamically using JavaScript</p>
+<p>
+    <a href="javascript:void(0);" onclick="addElement();">Add</a>
+    <a href="javascript:void(0);" onclick="removeElement();">Remove</a>
+</p>
+<div id="data"></div>
+
+</body>
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script >
+	/*//forEach
+	text="";
+	var arr=[10,20,30,40,50];
+	arr.forEach(function (element){ console.log(element)});//SE5
+	// ES6  (element)=>console.log(element)
+	arr.forEach(myFun);
+	function myFun(value,index,arr){
+     text+=value+"<br>";
+	}
+	document.getElementById("demo").innerHTML=text;
+*/
+
+//map()
+	
+/*	var arr=[10,20,30,40,50]; //output=20,40,60....
+	const res=arr.map(x=>x*2);
+	console.log(res);
+	var num=arr.map(myFun)
+	function myFun(value){
+     	return value*2;
+     	}
+	document.getElementById("demo").innerHTML=num;
+*/
+//filter() new array return
+/*	var arr=[10,20,30,40,50]; //output=40,50
+	const res=arr.filter(x=>x>30);
+	console.log(res);
+	var num=arr.filter(myFun)
+	function myFun(value){
+     	return value>30;
+     	}
+	document.getElementById("demo").innerHTML=num;
+
+	var proLang=["java","angular","spring","React","html"];
+	var temp=proLang.filter(function (value){return value.length>20});
+   document.getElementById("demo").innerHTML=temp;*/
+
+   // reduce() return single value left- right
+   /*var arr=[10,20,30,40,50]; //output=40,50
+	const res=arr.reduceRight((a,b)=>a+b);
+	console.log(res);
+	var sum=arr.reduceRight(myFun,100)
+	function myFun(sum,value){
+		console.log(sum+"  "+value)
+     	return sum+value;
+     	}
+	document.getElementById("demo").innerHTML=sum;*/
+
+	// every()
+	/*var arr=[10,20,30,40,50]; 
+	var res=arr.every(myFun)
+	function myFun(value){
+		
+     	return value>30;
+     	}
+	document.getElementById("demo").innerHTML=res;*/
+
+//some()
+	/*var arr=[10,20,30,40,5]; 
+	var res=arr.some(myFun)
+	function myFun(value){
+		
+     	return value>30;
+     	}
+	document.getElementById("demo").innerHTML=res;*/
+
+//indexOf() or lastindexOf()
+//find()
+	/*var arr=[10,20,30,40,50]; 
+	var res=arr.find(myFun)
+	function myFun(value){
+		
+     	return value>30;
+     	}
+	document.getElementById("demo").innerHTML=res;	*/
+
+
+//findIndex()
+	var arr=[10,20,30,40,50]; 
+	var res=arr.findIndex(myFun)
+	function myFun(value){
+		
+     	return value>30;
+     	}
+	document.getElementById("demo").innerHTML=res;
+
+	// includes()
+
+		var arr=[10,20,30,40,50]; 
+	var res=arr.includes(40);
+	console.log(res);
+
+	
+</script>
+</body>
+</html>

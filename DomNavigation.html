@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+</head>
+<body>
+<h1 id="101">Hello TQ</h1>
+<div id="demo"></div>
+<p id="para"></p>
+
+<script >
+	/*document.getElementById("demo").innerHTML=document.getElementById("101").innerHTML;*/
+
+	/*document.getElementById("demo").innerHTML=document.getElementById("101").firstChild.nodeValue;*/
+	document.getElementById("demo").innerHTML=document.getElementById("101").childNodes[0].nodeValue;
+
+	/*alert(document.body.innerHTML);*/
+	//alert(document.documentElement.innerHTML);
+
+	/*document.getElementById("demo").innerHTML=document.getElementById("para").nodeName;*/
+
+	/*document.getElementById("demo").innerHTML=document.getElementById("para").firstChild.nodeValue;*/
+	document.getElementById("demo").innerHTML=document.getElementById("101").nodeType;
+</script>
+</body>
+</html>

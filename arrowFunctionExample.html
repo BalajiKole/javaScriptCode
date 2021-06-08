@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"></div>
+	<script>
+		const message=function (){return "Hello Jan Batch";}
+
+		//const msg=()=>{return "Hello Feb Batch";}
+
+		//const msg=()=>"Hello Feb Batch";
+		//const msg=(title)=> "Hello Feb Batch "+title;
+          const msg=title=> "Hello Feb Batch "+title;
+		document.getElementById("demo").innerHTML=msg("Tq");
+
+		const sum=(a,b)=>{return (a+b);}
+
+		document.getElementById("demo").innerHTML=sum(40,50);
+
+		const subject=['java','html','spring','js','react'];
+		 const subjectLength=(subject.map(sub=> sub.length));
+	document.getElementById("demo").innerHTML=subjectLength;
+
+	// spread operator- expands an array into its element
+	function add(x,y,z,a,b,c){
+		return x+y+z+a+b+c;
+	}
+	//var add=(x,y,z)=> x+y+z;
+	const num=[1,2,3];
+	/*document.getElementById("demo").innerHTML=add.apply(null,num);*/
+	document.getElementById("demo").innerHTML=add(...num,40,...[1,2],...[4,5]);
+//rest operator collect multiple elements into single element
+
+		function multi(a,b,...sum){
+			return sum.reduce((a,b)=>{return a*b});
+		}
+
+
+
+
+
+document.getElementById("demo").innerHTML=multi(1,2,3,4,5);
+
+// template literal (``)
+
+//desturctring
+var obj={a:1,b:2,c:3};
+var x=obj.a;// ES5
+
+ var {a,b,c}=obj;//ES6
+
+ var a=1;
+ var b=2;
+ var c=3;
+ var obj={a:a,b:b,c:c};//ES5
+ var obj1={a,b,c}//ES6
+
+
+
+
+	</script>
+
+</body>
+</html>

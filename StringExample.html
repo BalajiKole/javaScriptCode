@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <div id="demo"></div>
+ <script>
+ 	//var str="Welcome to \"Jan\" Batch";
+ /*	var str="Jan Batch";
+ 	var str2=new String("Jan Batch")
+ 	var str3= new String("Jan Batch");*/
+ 	/*document.getElementById("demo").innerHTML=str +" "+ typeof str +"<br>"+str2+" "+ typeof str2 +"<br>"+ (str==str2)+"<br>"+ (str===str2);*/
+/*document.getElementById("demo").innerHTML=(str2==str3)+"<br>"+ (str2===str3);*/
+
+// string methods
+ var str="Welcome jan batch how are you jan wowwwww jan";// string start zero index
+ var pos=str.indexOf("jan",10);
+ var pos1=str.lastIndexOf("jan",10);
+ var pos2=str.search("jan");
+//document.getElementById("demo").innerHTML=pos2;
+
+//slice(5,10) strat,end 5-9
+//var res=str.slice(8,17);
+/*var res=str.slice(-17,1);*/
+/*var res=str.slice(10);
+document.getElementById("demo").innerHTML=res;*/
+
+// substring  accept +ve value
+/*var res=str.substring(8,30);
+document.getElementById("demo").innerHTML=res;*/
+
+//substr()  length
+
+//var res=str.substr(8,2);
+/*var res=str.substr(-5);
+document.getElementById("demo").innerHTML=res;*/
+
+// repalce
+
+//var res=str.replace("JAN","feb"); 
+var res=str.replace(/JAN/ig,"feb"); // /i,/g
+//document.getElementById("demo").innerHTML=res.toUpperCase();
+
+// cancat() +
+var s="Hello";
+var s1="World";
+var s2=s.concat(" ",s1);
+var s3= s +" "+s2;
+//document.getElementById("demo").innerHTML=s2;
+
+// trim()
+
+/*var s="                Hello      World    ";
+document.getElementById("demo").innerHTML=s;
+var s1=s.trim();
+alert(s1);*/
+
+// chartAt()
+var message="hello world";
+document.getElementById("demo").innerHTML=message.charAt(1);//char
+document.getElementById("demo").innerHTML=message.charCodeAt(1);//unicode UTF-16 0-65535
+document.getElementById("demo").innerHTML=message[1];//ES5 []
+var str5="hello world";
+var arr=str5.split(" ");
+var text=""
+for (var i = 0; i < arr.length; i++) {
+	text+=arr[i]+"";
+}
+
+document.getElementById("demo").innerHTML=text;
+ /*I love india
+india love I
+aidni evol I*/
+ 
+ 
+ // number NaN-Not a number
+var x=100/"10"; 
+var y=NaN;
+var z=5;
+document.getElementById("demo").innerHTML=isNaN(x);
+//document.getElementById("demo").innerHTML=(y+z)+"<br>"+ typeof NaN;
+
+var num=2;
+var txt="";
+while(num!=Infinity){
+	num=num*num;
+	txt=txt+num+"<br>";
+}
+ var x=0xAA;
+ var b=30;
+document.getElementById("demo").innerHTML=x.toString(2);
+ var h=new Number(150);
+ 10.12345.tofixed(2) 10.12
+
+
+
+ </script>
+ </body>
+ </html>

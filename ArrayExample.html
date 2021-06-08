@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"></div>
+
+	<script>
+		var person=["Jay",
+		"Ansh","Sara"];
+		var person1=new Array("Sonali","Ram","Sita",50);
+		person1[0]="Yash"
+		person2={firstName:"jay",lastName:"Patil", age:25}
+
+		document.getElementById("demo").innerHTML=person1[0];
+		document.getElementById("demo").innerHTML=person1[person1.length-1];
+
+		text="<ul>";
+		for (let i = 0; i < person1.length; i++) {
+			text+="<li>"+person1[i]+"</li>";
+		}
+		text+="</ul>"
+document.getElementById("demo").innerHTML=text;
+ 
+ // forEach
+
+text="<ul>";
+person1.forEach(myFun); 
+text+="</ul>"
+document.getElementById("demo").innerHTML="forEach= "+text;
+function myFun(value){
+	text+="<li>"+value+"</li>";
+}
+
+
+	</script>
+
+
+</body>
+</html>

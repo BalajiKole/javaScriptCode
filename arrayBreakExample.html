@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Enter your age:<input type="text" id="age" value="10" placeholder="age">
+	<button onclick="myFun()">submit</button>
+	<div id="demo"></div>
+	<div id="demo1"></div>
+<script>
+ function myFun() {
+ 	var age,voteable;
+ 	/*age=document.getElementById("age").value;
+voteable=(age>18)?"allow for voting":"not allowed for vote";
+ document.getElementById("demo").innerHTML=age +" "+voteable + typeof age;*/
+ age=Number(document.getElementById("age").value);
+ if(isNaN(age)){voteable="Input is not Number";
+}else{
+voteable=(age>18)?"allow for voting":"not allowed for vote";
+}
+ document.getElementById("demo").innerHTML=voteable;
+ var txt;
+ var x="3";
+ switch(new Date().getDay()){
+ 	
+ 	case 0:txt="Today is Sunday";
+ 	break;
+ 	case 1:txt="Today is Monday";
+ 	break;
+ 	case 2:txt="Today is tue";
+ 	break;
+ 	case 3:txt="Today is Wend";
+ 	break;
+ 	case 4:txt="Today is Thur";
+ 	break;
+ 	case 5:txt="Today is Fri";
+ 	break;
+ 	case 6:txt="Today is Sat";
+ 	break;
+ 	default:txt="Looking forward to the weekend";
+
+
+ }
+  document.getElementById("demo1").innerHTML=txt;
+
+ }
+ // errors
+ 
+
+
+
+
+	let vowels=['a','e','i','o','u'];
+	for (const vowel of vowels) {
+			console.log(vowel);
+			if(vowel==='i'){
+				break;
+			}
+
+	}
+	console.log("some mehtod");
+ vowels.some(vowel=>{console.log(vowel);
+return vowel==='i';});
+ // every method
+ let numbers=[2,10,12,7,16,14];
+numbers.every(number=>{console.log(number);
+return (number%2===0)}); 
+/*x=10 
+==   x=="10" x==10 T/F
+=== != !== 
+> < >= <=
+&& || !  (x<10 && y>1) T/F
+ ?:*/
+
+</script>
+</body>
+</html>

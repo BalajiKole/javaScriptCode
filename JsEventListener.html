@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="btn1">my-button</button>
+<div id="demo"></div>
+
+<div id="demo1"></div>
+
+<script>
+	/*document.getElementById("btn1").addEventListener('click',displayDate);
+		function displayDate(){
+			document.getElementById("demo").innerHTML=Date();
+		}*/
+	/*document.getElementById("btn1").addEventListener('click',function(){alert("Hello Jan batch")});*/
+	/*document.getElementById("btn1").addEventListener('click',fun);
+	function fun(){
+		alert("Hello Jan batch")
+	}*/
+
+/*
+var x=document.getElementById("btn1");
+x.addEventListener('click',fun);
+x.addEventListener('click',fun1);
+
+	function fun(){
+		alert("Hello Jan batch")}
+		function fun1(){
+		alert("Hello Feb batch")}*/
+/*
+
+
+var x=document.getElementById("btn1");
+x.addEventListener('mouseover',fun);
+x.addEventListener('click',fun1);
+x.addEventListener('mouseout',fun2);
+
+	function fun(){
+		document.getElementById("demo").innerHTML+="Hello Jan batch<br/>";}
+		function fun1(){
+		document.getElementById("demo").innerHTML+="Hello Feb batch <br/>";}function fun2(){
+		document.getElementById("demo").innerHTML+="visit once again !!!!!!<br/>";}	
+
+
+	window.addEventListener("resize",function(){document.getElementById("demo1").innerHTML=Math.random();})	*/
+ // passing paramter
+
+ document.getElementById("btn1").addEventListener('click',function(){add(40,50)});
+ function add(a,b){
+ 	document.getElementById("demo").innerHTML="Addition="+" "+(a+b);
+ }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	</head>
+<body>
+
+<div id="d1">
+	
+</div>
+
+
+<script type="text/javascript">
+	//https://angular.io/api/common/DatePipe
+ //var d =new Date("2010-04-25T10:40:15Z");//YYYY-MM-DD, YYYY-MM, YYYY, YYYY-MM-DDTHH:MM:SSZ
+
+ /*var d=new Date("04/20/2007")//MM/DD/YYYY- short date */
+ 
+/* var d=new Date(" JUNE 24 2008")//MMM DD YYYY long date mar 24 2008*/
+//document.getElementById("d1").innerHTML=d;
+
+ var d=new Date("JUNE 24 2008") // jan 1 1970
+ var msec=Date.parse(d)
+ var dd=new Date(msec);
+
+document.getElementById("d1").innerHTML=dd;
+
+</script>
+
+</body>
+</html>

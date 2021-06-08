@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="num">
+<button onclick="myFun()">submit</button>
+
+<div id="demo"></div>
+<script>
+
+function myFun(){
+ var message,x;
+ message=document.getElementById("demo");
+ message.innerHTML="";
+ x=document.getElementById("num").value;
+ try{
+  if(x=="") throw "empty";
+  if(isNaN(x)) throw "not a number";
+  x=Number(x);
+  if(x<10) throw "too low";
+  if(x>30) throw "too high";
+ }catch(e){
+message.innerHTML="Input is "+ e;
+ }finally{
+ 	document.getElementById("num").value="";
+ }
+
+}
+
+//Error Name vales
+  /*RangeError 
+ RefernceError
+ SyntaxError/EvalError
+ TypeError
+ URIError*/
+
+ var num=1;
+ try{
+ //num.toPrecision(500); //RangeError
+ //num=a+10; //RefernceError
+ //eval("alert('Hello js)"); //SyntaxError
+ num.toUpperCase();//TypeError
+ }catch(err){
+ 	document.getElementById("demo").innerHTML=err.name+" "+err.message;
+ }
+  
+
+
+
+
+	/*try{alert("welcome Jan Batch");
+	}catch(e){
+		document.getElementById("demo").innerHTML=e.message;
+	}*/
+
+</script>
+</body>
+</html>

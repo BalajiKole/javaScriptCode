@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"> </div>
+
+<script type="text/javascript">
+	//var d=new Date("2010-04-24");//YYYY-MM-DD 1 jan 1970
+	/*document.getElementById("demo").innerHTML=d.getTime();*/
+	var d= new Date();
+document.getElementById("demo").innerHTML=d.getFullYear();//YYYY
+document.getElementById("demo").innerHTML=d.getMonth();//0-11
+
+ var month=["Jan","Feb","Mar","Apr","May"];
+ document.getElementById("demo").innerHTML=month[d.getMonth()];
+ document.getElementById("demo").innerHTML=d.getDate();// 1-31
+
+ document.getElementById("demo").innerHTML=d.getHours();//0-23
+ document.getElementById("demo").innerHTML=d.getMinutes();//0-59
+ document.getElementById("demo").innerHTML=d.getSeconds();//0-59
+ document.getElementById("demo").innerHTML=d.getMilliseconds();//0-999
+
+ document.getElementById("demo").innerHTML=d.getDay();// 0-6 0-sunday,1-monday,2-tue
+
+ var days=["Sunday","Monday","Tuesday","Wednesday"];
+ document.getElementById("demo").innerHTML=days[d.getDay()];
+
+</script>
+</body>
+</html>

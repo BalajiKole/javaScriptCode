@@ -1,0 +1,61 @@
+<!-- setTimeOut(f,3000)// once time call
+setInterval(f,millisecond)// repeats -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="myvar=setTimeout(myfun,5000)">show</button>
+
+<button onclick="clearTimeout(myvar)">stop</button>
+
+<script>
+	function myfun(){
+		//alert("hello jan");
+		for (var i = 0; i <= 10; i++) {
+			console.log(i);
+		}
+	}
+
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="demo"></div>
+<div id="d"></div>
+<button onclick="clearInterval(myvar)">Stop Time</button>
+<!-- <button onclick="fun()">show time</button> -->
+<script>
+	var myvar=setInterval(myTimer,1000);
+	function myTimer(){
+		var d=new Date();
+	document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+	}
+
+
+	function fun(){
+		var d=new Date();
+	document.getElementById("d").innerHTML=d.toLocaleTimeString();
+	}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="d"></div>
+
+<script>
+	
+/*let p=JSON.parse(localStorage.getItem("person"));
+
+console.log(p);
+x="";
+for(i in p){
+x+=p[i]+"<br/>";
+}
+
+document.getElementById("d").innerHTML=x;*/
+var emp=JSON.parse(localStorage.getItem("emp"));
+var x="";
+for(i in emp){
+	x+="<h1>"+emp[i].id+" "+emp[i].name+" "+emp[i].salary+"</h1>";
+}
+document.getElementById("d").innerHTML=x;
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- <h1 onclick="this.innerHTML='welcome Jan batch'">Hello TQ</h1> -->
+<h1 onclick="display(this)">Hello TQPP</h1>
+
+<button id="btn1">Show current Date</button>
+<div id="demo"></div>
+ 
+<input type="text" id="fname" onchange="myfun()"><br/>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: green;width: 150px;height: 40px;padding: 40px;color: white">Welcome Jan Batch</div>
+
+<script >
+	function mOver(obj){
+		obj.innerHTML="Thank you visit once again!!!!!"
+	}
+	function mOut(obj){
+		obj.innerHTML='Welcome Jan Batch';
+	}
+
+
+
+	function myfun(){
+		var x=document.getElementById("fname");
+		x.value=x.value.toUpperCase();
+	}
+	function display(id){
+		id.innerHTML='welcome Jan batch';
+	}
+document.getElementById("btn1").onclick=displayDate;
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+
+
+
+
+
+</script>
+</body>
+</html>

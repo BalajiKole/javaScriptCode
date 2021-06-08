@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"style="background-color: green;width: 150px;height: 40px;padding: 40px;">Welcome Jan Batch</div><br/><br/>
+UserName:<input type="text" id="fname" onfocus="fun(this)" onblur="myFun()">
+password:<input type="text" id="fname" onfocus="fun(this)" onblur="myFun()">
+
+<script>
+	function fun(obj){
+		obj.style.background='pink';
+	}
+
+	function myFun(){
+		var x=document.getElementById("fname");
+		x.value=x.value.toUpperCase();
+	}
+
+
+	function mDown(obj){
+		obj.style.backgroundColor="yellow";
+		obj.innerHTML="Thank you visit once again!!";
+	}
+	function mUp(obj){
+		obj.style.backgroundColor="green";
+		obj.innerHTML="Welcome Jan Batch";
+	}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<button onclick="document.getElementById('demo').innerHTML=Date()">show date</button>
+<button onclick="this.innerHTML=Date()">show date</button>
+<script >
+	var person={
+		pname:"Jay",
+		age:26,
+		display:function(){return this.pname +" "+this.age}
+	}
+
+	document.getElementById("demo").innerHTML=person.display();
+	/*"use strict"
+	var x=this;//  window object
+	document.getElementById("demo").innerHTML=x;*/
+"use strict"
+//document.getElementById("demo").innerHTML=myfun();
+function myfun(){
+	return this;
+}
+
+
+</script>
+</body>
+</html>
+<!-- this in method 
+this global object 
+in function this gb
+strict this 
+this- event
+call(), apply() - this -->

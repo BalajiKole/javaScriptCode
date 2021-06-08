@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+
+<script type="text/javascript">
+	var today,nextday,str;
+	today=new Date();
+	nextday=new Date();
+	nextday.setFullYear(2010,4,25);
+if(nextday>today)
+	str="Today is before 2010 ";
+else
+	str="Today is after 2010";
+
+document.getElementById("demo").innerHTML=str;
+
+
+
+</script>
+</body>
+</html>

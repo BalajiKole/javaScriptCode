@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"></div>
+<script>
+	var str="welcome tqpp tqpp 500";
+	var res=str.search(/tqpp/i);
+	var res1=str.replace(/tqpp/igm,"jan batch");
+	/*var p=/[tp]/g;*/
+	var p=/\btq/g; // \d \s \b  n+ n* n? [a-z]+  + * ?
+	var res2=str.match(p);
+	var str1="123456781234";
+	var p1=/[1-4]/g;
+	var res3=str1.match(p1);
+
+   var str2="java, angular, react, html, java";
+	var p3=/(java|angular)/g;
+	var res4=str2.match(p3);
+	var pp=/jan/;
+	 var text=pp.test(str); // t/f
+	 var text1=pp.exec(str);
+
+	document.getElementById("demo").innerHTML=text1;
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

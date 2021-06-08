@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<script>
+	//obj=new Person("Jay");
+
+	class Person{
+
+		constructor(pname){
+			//let i=10;
+			this._pname=pname;
+		}
+		get pname(){
+			return this._pname;
+		}
+
+		set pname(x){
+			this._pname=x;
+
+		}
+		
+	}
+
+	
+obj=new Person("Jay");
+obj.pname="Ansh";
+document.getElementById("demo").innerHTML=obj.pname;
+
+(function (){document.getElementById("demo").innerHTML="Ram"})();
+
+
+/*function myFun(){
+	return arguments.length;
+}
+document.getElementById("demo").innerHTML="function length="+" "+myFun(10,20,30,40);
+document.getElementById("demo").innerHTML=myFun.toString();*/
+/*function add(a,b=0){
+	/*if(b===undefined){
+		b=0;
+	}
+	return "add="+" "+(a+b);
+}
+document.getElementById("demo").innerHTML=add(10,30);*/
+
+function add(){
+	var sum=0;
+	var max=0;
+	for (var i = 0; i < arguments.length; i++) {
+		//sum+=arguments[i];
+		if(arguments[i]>max){
+			max=arguments[i];
+		}
+	}
+	//return "add="+" "+sum;
+	return "max="+" "+max;
+}
+document.getElementById("demo").innerHTML=window.add(10,30,50,80,20,400);
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+<!-- function fun(a,s){
+	//
+}
+fun(1,2)
+
+(function (){
+	var x="jay";
+})();
+
+ c=a+b; -->

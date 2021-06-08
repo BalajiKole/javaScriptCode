@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+	<script>
+		class Person{
+			constructor(pname){
+				this.pname=pname;
+			}
+			show(age){
+				return "Hello"+" "+this.pname +" "+"I am "+age+" "+"years old"
+			}
+			static add(){
+				return (10+40);
+			}
+			static sub(a,b){
+				return "sub="+" "+(a-b);
+			}
+		}
+		obj=new Person("Ansh");
+
+/*document.getElementById("demo").innerHTML=obj.pname;
+*/	
+/*document.getElementById("demo").innerHTML=obj.show(30);*/
+/*document.getElementById("demo").innerHTML="Addition="+" "+Person.add();*/
+document.getElementById("demo").innerHTML=Person.sub(100,10);
+
+</script>
+
+</body>
+</html>
+
+

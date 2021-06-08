@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="d"></div>
+
+<script>
+	/*localStorage.setItem("city","pune");
+document.getElementById("d").innerHTML=localStorage.getItem("city");
+
+*/
+var person=["jay","ansh","sara"];
+localStorage.setItem("person",JSON.stringify(person))
+let p=JSON.parse(localStorage.getItem("person"));
+console.log(p);
+document.getElementById("d").innerHTML=p[0];
+
+var employee=[{id:101,name:"jay",age:25,salary:20000},{id:102,name:"Ansh",age:28,salary:10000}]
+localStorage.setItem("emp",JSON.stringify(employee));
+
+var emp1={id:101,name:"Yash",age:20,address:[{city:"pune",state:"maha"}]};
+sessionStorage.setItem("emp1",JSON.stringify(emp1));
+
+
+
+
+
+</script>
+</body>
+</html>

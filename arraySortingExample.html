@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="sortFunction()">Age sort</button>
+	<button onclick="sortFunction1()">Name sort</button>
+	<div id="demo"></div>
+	<div id="demo1"></div>
+	<div id="demo2"></div>
+	
+	<script>
+		 
+ // sorting ascending order
+/*var person=["Jay","Ansh","Sara","Raj"];
+document.getElementById("demo").innerHTML="Without sort= "+person;
+var p=person.sort();
+document.getElementById("demo1").innerHTML="ascending sort="+p;*/
+
+//sorting descending order
+
+/*var person=["Jay","Ansh","Sara","Raj"];
+document.getElementById("demo").innerHTML="Without sort= "+person;
+var p=person.sort(); //sort values as string
+p.reverse();
+document.getElementById("demo1").innerHTML="Array descending sort="+p;*/
+
+// numeric sort
+/*var num=[40,100,1,5,25,10]; //1,5,10,25,40,100
+document.getElementById("demo").innerHTML="Without sort= "+num;
+var p=num.sort(function(a,b){return a-b}); //sort values as string
+
+document.getElementById("demo1").innerHTML="Array sort="+p;*/
+
+// max value from array
+//var num=[40,100,1,5,25,10]; 
+//document.getElementById("demo").innerHTML="number array= "+num;
+//document.getElementById("demo1").innerHTML="Max value="+myFun(num);
+//document.getElementById("demo2").innerHTML="Min value="+myFun1(num);
+ function myFun(arr){
+ 	return Math.max.apply(null,arr);//Math.max(40,100,1,5,25,10)
+ }
+function myFun1(arr){
+ 	return Math.min.apply(null,arr);
+ }
+
+ var person=[{name:"Jay", age:15},
+ 			  {name:"Ansh",age:20},
+ 			  {name:"Sara",age:19}];
+dispaly();
+
+function sortFunction(){
+	person.sort(function(a,b){return b.age-a.age});
+	dispaly();
+}
+function sortFunction1(){
+	person.sort(function(a,b){
+		var x=a.name.toLowerCase();
+		var y=b.name.toLowerCase();
+		if(x<y){return -1;}
+		if(x>y){return 1;}
+		return 0;
+	});
+	dispaly();
+}
+
+function dispaly(){
+	document.getElementById("demo").innerHTML=person[0].name+" "+person[0].age+"<br>"+
+	person[1].name+" "+person[1].age+"<br>"+
+person[2].name+" "+person[2].age
+}
+
+	</script>
+
+</body>
+</html>

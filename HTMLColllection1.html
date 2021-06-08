@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello</h1>
+	<h1>Jan batch</h1>
+	<h1>Feb Batch</h1>
+<div id="demo"></div>
+<button onclick="fun()">change color</button>
+<script >
+ var mynodeList=document.querySelectorAll("h1");
+document.getElementById("demo").innerHTML=mynodeList.length;
+
+	/*var collectionObj=document.getElementsByTagName("h1");
+	document.getElementById("demo").innerHTML=collectionObj[1].innerHTML;
+*/	function fun(){
+for (var i = 0; i < collectionObj.length; i++) {
+	collectionObj[i].style.color='red';
+}}
+
+</script>
+</body>
+</html>

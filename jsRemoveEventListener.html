@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo" style="background-color:yellow;border: 1px solid;padding: 50px">
+		<p>The early to mid-1990s was an important time for the internet. Key players like Netscape and Microsoft were in the midst of browser wars, with Netscape’s Navigator and Microsoft’s Internet Explorer going head to head.
+
+    In September 1995, a Netscape programmer named Brandan Eich developed a new scripting language in just 10 days. It was originally named Mocha, but quickly became known as LiveScript and, later, JavaScript.
+
+</p>
+		
+	<button onclick="handler()">Remove</button>	
+	</div>
+	<div id="demo1"></div>
+<script>
+	document.getElementById("demo").addEventListener('mousemove',fun);
+
+	function fun(){
+		document.getElementById("demo1").innerHTML=Math.random();
+	}
+
+function handler(){
+	document.getElementById("demo").removeEventListener('mousemove',fun)
+}
+//attchEvent(e,f)// IE 8 
+
+
+
+
+
+</script>
+</body>
+</html>
